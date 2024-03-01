@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background-image: url('https://github.com/WandersonMaikon/programacao_web_I/blob/main/Aula_3/Desafio/images/pattern-background-desktop.svg?raw=true');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+}
+
+section {
+    background: white;
+    width: 378px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 40px;
+}
+
+.bordazul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bordazul img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+}
+
+.bordazul p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.changeDiv {
+    font-size: 0.8rem;
+    color: hsl(213, 9%, 50%);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: hsl(225, 100%, 98%);
+    margin-left: 20px;
+}
+
+button {
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(13, 80%, 53%);
+}
+
+a {
+    font-size: 0.8rem;
+    color: hsl(213, 9%, 50%);
+    
+}
