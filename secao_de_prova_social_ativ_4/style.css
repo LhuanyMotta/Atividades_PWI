@@ -1,0 +1,238 @@
+/* Declarando o corpo do documento */
+body{
+    
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg); /* Define a imagem de fundo do body com duas imagens, uma para o topo e outra para a parte inferior */
+    margin: 0; /* Define margem e preenchimento como 0 para o body */
+    padding: 0;    
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */    
+    background-repeat: no-repeat, no-repeat; /* Define a repetição das imagens de fundo para não se repetirem */    
+    background-position: left top, right bottom; /* Define a posição das imagens de fundo, uma para o canto superior esquerdo e outra para o canto inferior direito */    
+    background-size: 40%, 80%; /* Define o tamanho das imagens de fundo */    
+    display: flex; /* Define o elemento body como um contêiner flexível com layout de linha */
+    flex-wrap: wrap;    
+    font-family: "League Spartan, sans-serif"; /* Define a fonte para o texto no body */
+}
+
+/* Definindo o a div mãe de todas .main */
+.geral{
+    
+    width: 100%; /* Define a largura do elemento .main como 100% da largura do seu contêiner pai */    
+    padding: 0px; /* Define o preenchimento interno do elemento .main como 0 pixels em todas as direções */    
+    flex-wrap: wrap; /* Define o comportamento de quebra de linha do elemento .main como "wrap", permitindo que seus filhos sejam distribuídos em várias linhas se necessário */
+    display: flex; /* Define o elemento .main como um contêiner flexível com layout de linha */    
+    column-gap: 100px; /* Define o espaçamento entre as colunas dos itens filhos do elemento .main como 100 pixels */
+}
+
+/* Definindo as seções */
+section{    
+    display: flex; /* Define o elemento section como um contêiner flexível com layout de linha */    
+    width: 100%; /* Define a largura do elemento section como 100% da largura do seu contêiner pai */    
+    justify-content: center; /* Alinha os itens dentro do elemento section ao centro ao longo do eixo principal (horizontal) */    
+    flex-wrap: wrap; /* Define o comportamento de quebra de linha do elemento section como "wrap", permitindo que seus filhos sejam distribuídos em várias linhas se necessário */    
+    column-gap: 15%; /* Define o espaçamento entre as colunas dos itens filhos do elemento section como 15% da largura do seu contêiner pai */
+}
+
+/* Definindo o elemento com a classe .avaliacaoEstrela */
+.avaliacaoEstrela{    
+    width: 420px; /* Define a largura do elemento como 420 pixels */    
+    padding: 0 0 0 10px; /* Define o preenchimento do elemento (0 pixels no topo, 0 à direita, 0 embaixo, 10 à esquerda) */    
+    display: flex; /* Define o elemento como um contêiner flexível com layout de coluna */
+    flex-direction: column;    
+    margin: 10% 90px 25px 0px; /* Define as margens do elemento (10% superior, 90 pixels à direita, 25 pixels embaixo, 0 à esquerda) */    
+    font-size: 15px; /* Define o tamanho da fonte como 15 pixels */
+}
+
+/* Definindo o elemento com a classe .reviews */
+.reviews{    
+    color: hsl(300, 43%, 22%); /* Define a cor do texto usando HSL (Matiz: 300, Saturação: 43%, Luminosidade: 22%) */    
+    font-weight: 600; /* Define o peso da fonte como 600 (mais pesado que o normal) */    
+    background-color: hsl(300, 24%, 96%); /* Define a cor de fundo usando HSL (Matiz: 300, Saturação: 24%, Luminosidade: 96%) */   
+    width: 100%; /* Define a largura do elemento como 100% da largura do seu contêiner pai */    
+    padding: 0 10px; /* Define o preenchimento do elemento (0 pixels no topo e na parte inferior, 10 pixels à esquerda e à direita) */    
+    height: 50px; /* Define a altura do elemento como 50 pixels */    
+    display: flex; /* Define o elemento como um contêiner flexível com layout de linha */
+    flex-direction: row; /* Alinha verticalmente os itens dentro do elemento ao centro */    
+    align-items: center; /* Alinha o texto horizontalmente ao centro */    
+    text-align: center;
+    border-radius: 5px; /* Define o raio da borda como 5 pixels */
+    margin: 0 0px 15px 0px; /* Define as margens do elemento (0 pixels no topo, 0 pixels à direita, 15 pixels embaixo, 0 pixels à esquerda) */
+}
+
+/* Definindo os parágrafos dentro do elemento com a classe .reviews */
+.reviews p{
+    margin-left: 20px; /* Define a margem à esquerda do parágrafo como 20 pixels */
+    font-size: 15px; /* Define o tamanho da fonte do parágrafo como 15 pixels */
+}
+
+/* Definindo o elemento com a classe .guru */
+.guru{
+    color: hsl(300, 43%, 22%); /* Define a cor do texto usando HSL (Matiz: 300, Saturação: 43%, Luminosidade: 22%) */
+    font-weight: 600; /* Define o peso da fonte como 600 (mais pesado que o normal) */
+    background-color: hsl(300, 24%, 96%); /* Define a cor de fundo usando HSL (Matiz: 300, Saturação: 24%, Luminosidade: 96%) */
+    width: 100%; /* Define a largura do elemento como 100% da largura do seu contêiner pai */
+    padding: 0 10px; /* Define o preenchimento do elemento (0 pixels no topo e na parte inferior, 10 pixels à esquerda e à direita) */
+    height: 50px; /* Define a altura do elemento como 50 pixels */
+    display: flex; /* Define o elemento como um contêiner flexível com layout de linha */
+    flex-direction: row; /* Define a direção dos itens do flexbox como linha */
+    align-items: center; /* Alinha verticalmente os itens dentro do elemento ao centro */    
+    text-align: center; /* Alinha o texto horizontalmente ao centro */    
+    border-radius: 5px; /* Define o raio da borda como 5 pixels */    
+    margin: 0 0 15px 5%; /* Define as margens do elemento (0 pixels no topo, 0 pixels à direita, 15 pixels embaixo, 5% à esquerda) */
+}
+
+/* Definindo os parágrafos dentro do elemento com a classe .guru */
+.guru p{    
+    margin-left: 20px; /* Define a margem à esquerda do parágrafo como 20 pixels */
+    font-size: 15px; /* Define o tamanho da fonte do parágrafo como 15 pixels */
+}
+
+/* Define a classe .besttech */
+.besttech{
+    color: hsl(300, 43%, 22%); /* Define a cor do texto usando HSL (matiz, saturação, luminosidade). Aqui, a matiz é 300, a saturação é 43% e a luminosidade é 22%. */
+    font-weight: 600; /* Define o peso da fonte como 600, que geralmente corresponde a 'bold' (negrito). */
+    background-color: hsl(300, 24%, 96%); /* Define a cor de fundo usando HSL. Aqui, a matiz é 300, a saturação é 24% e a luminosidade é 96%. */
+    width: 100%; /* Define a largura como 100% da largura do elemento pai. */
+    padding: 0 10px; /* Define o preenchimento (espaço interno) superior e inferior como 0 e o preenchimento esquerdo e direito como 10 pixels. */
+    height: 50px; /* Define a altura como 50 pixels. */
+    display: flex; /* Define o tipo de display como flexível, permitindo o uso de propriedades de layout flexível. */
+    flex-direction: row; /* Define a direção dos itens flexíveis como linha, o que significa que os itens filhos do elemento serão organizados horizontalmente. */
+    align-items: center; /* Define o alinhamento vertical dos itens filhos como centralizados. */
+    text-align: center; /* Define o alinhamento horizontal do texto como centralizado dentro do elemento. */
+    border-radius: 5px; /* Define um raio de borda de 5 pixels para criar bordas arredondadas. */
+    margin-left: 10%; /* Define a margem esquerda como 10% da largura do elemento pai. */
+}
+
+/* Definindo os parágrafos dentro do elemento com a classe .besttech */
+.besttech p{
+    margin-left: 25px; /* Define a margem esquerda como 40 pixels. Isso cria um espaço entre o elemento .besttech e seu elemento pai à esquerda. */
+    font-size: 15px; /* Define o tamanho da fonte como 15 pixels. Isso altera o tamanho do texto dentro do elemento .besttech. */
+}
+
+/* Define a classe .titulo */
+.titulo{
+    
+    padding: 0 0 0 35px; /* Define o preenchimento do elemento. Os valores são aplicados no sentido horário: topo, direita, inferior, esquerda. Neste caso, 0 para o topo e inferior e 35 pixels para a direita e esquerda. */
+    width: 430px; /* Define a largura do elemento como 430 pixels. */
+    margin: 70px 0px 0 0px; /* Define as margens do elemento. Os valores são aplicados no sentido horário: topo, direita, inferior, esquerda. Neste caso, 70 pixels para o topo e 0 para os outros lados. */
+}
+
+/* Seleciona os elementos <h1> que são filhos diretos de elementos com a classe .titulo */
+.titulo h1{
+    width: 400px; /* Define a largura do elemento <h1> como 400 pixels. */
+    color: hsl(300, 43%, 22%); /* Define a cor do texto usando HSL (matiz, saturação, luminosidade). Aqui, a matiz é 300, a saturação é 43% e a luminosidade é 22%. */
+    font-weight: 700; /* Define o peso da fonte como 700, que geralmente corresponde a 'bold' (negrito). */
+    font-size: 40px; /* Define o tamanho da fonte como 40 pixels para os elementos <h1>. */
+}
+
+/* Seleciona os elementos <p> que são filhos diretos de elementos com a classe .titulo */
+.titulo p{    
+    width: 400px; /* Define a largura do elemento <p> como 400 pixels. */
+    font-size: 15px; /* Define o tamanho da fonte como 15 pixels para os elementos <p>. */
+    color: hsl(303, 10%, 53%); /* Define a cor do texto usando HSL (matiz, saturação, luminosidade). Aqui, a matiz é 303, a saturação é 10% e a luminosidade é 53%. */
+    font-weight: 600; /* Define o peso da fonte como 600, que geralmente corresponde a 'semi-bold'. */
+}
+
+/* Define a classe .avaliacoes */
+.avaliacoes{
+    width: 100%; /* Define a largura do elemento como 100% da largura do elemento pai. */
+    display: flex; /* Define o tipo de display como flexível, permitindo o uso de propriedades de layout flexível. */
+    flex-direction: row; /* Define a direção dos itens flexíveis como linha, o que significa que os itens filhos do elemento serão organizados horizontalmente. */
+    flex-wrap: wrap; /* Define que os itens flexíveis podem ser dispostos em várias linhas se não couberem em uma única linha. */
+    justify-content: center; /* Define a distribuição dos itens flexíveis ao longo do eixo principal (horizontalmente neste caso). Aqui, os itens são centralizados horizontalmente. */
+    margin-top: 100px; /* Define a margem superior como 100 pixels. */
+    line-height: 20px; /* Define a altura da linha para o texto dentro do elemento como 20 pixels. */
+    column-gap: 25px; /* Define o espaçamento entre as colunas (itens flexíveis) como 25 pixels. */
+}
+
+/* Define a classe .avaliadores */
+.avaliadores{
+    margin: 5px 0 10px 0; /* Define as margens do elemento. Os valores são aplicados no sentido horário: topo, direita, inferior, esquerda. Neste caso, 5 pixels para o topo, 10 pixels para a parte inferior e 0 pixels para os lados. */
+    line-height: 20px; /* Define a altura da linha para o texto dentro do elemento como 20 pixels. */
+    height: 50px; /* Define a altura do elemento como 50 pixels. */
+    color: hsl(333, 80%, 67%); /* Define a cor do texto usando HSL (matiz, saturação, luminosidade). Aqui, a matiz é 333, a saturação é 80% e a luminosidade é 67%. */
+}
+
+/* Define a classe .colton */
+.colton{
+    display: flex; /* Define o tipo de display como flexível, permitindo o uso de propriedades de layout flexível. */
+    flex-wrap: wrap; /* Define que os itens flexíveis podem ser dispostos em várias linhas se não couberem em uma única linha. */
+    padding: 40px; /* Define o preenchimento interno do elemento como 40 pixels em todos os lados. */
+    width: 300px; /* Define a largura do elemento como 300 pixels. */
+    color: white; /* Define a cor do texto como branco. */
+    background-color: hsl(300, 43%, 22%); /* Define a cor de fundo usando HSL (matiz, saturação, luminosidade). Aqui, a matiz é 300, a saturação é 43% e a luminosidade é 22%. */
+    margin: 0 0px 20px 0; /* Define as margens do elemento. Os valores são aplicados no sentido horário: topo, direita, inferior, esquerda. Neste caso, 0 pixels para o topo, 0 pixels para a direita, 20 pixels para a parte inferior e 0 pixels para a esquerda. */
+    height: 200px; /* Define a altura do elemento como 200 pixels. */
+    border-radius: 10px; /* Define o raio de borda do elemento como 10 pixels, criando bordas arredondadas. */
+}
+
+/* Define a img de colton */
+.colton img{
+    width: 50px; /* Define a largura da imagem como 50 pixels */
+    height: 50px; /* Define a altura da imagem como 50 pixels */
+    margin-right: 20px; /* Define uma margem direita de 20 pixels para a imagem */
+    border-radius: 30px; /* Define um raio de borda de 30 pixels, criando cantos arredondados */
+}
+
+/* Seleciona os elementos <strong> que são filhos diretos de elementos com a classe .avaliadores */
+.avaliadores strong{    
+    color: white; /* Define a cor do texto dos elementos <strong> como branco. */
+}
+
+/* Define a classe .irene */
+.irene{
+    display: flex; /* Define o modelo de layout do elemento como flexível */
+    flex-wrap: wrap; /* Permite que os itens dentro do elemento sejam organizados em várias linhas se necessário */
+    padding: 40px; /* Define o preenchimento interno do elemento como 40 pixels */
+    width: 300px; /* Define a largura do elemento como 300 pixels */
+    color: white; /* Define a cor do texto dentro do elemento como branco */
+    background-color: hsl(300, 43%, 22%); /* Define a cor de fundo do elemento usando HSL */
+    margin: 2% 0px 20px 0; /* Define as margens do elemento (superior, direita, inferior, esquerda) */
+    height: 200px; /* Define a altura do elemento como 200 pixels */
+    border-radius: 10px; /* Define o raio de curvatura dos cantos do elemento */
+}
+
+/* Define a img de irene */
+.irene img{
+    width: 50px; /* Define a largura do elemento como 50 pixels */
+    height: 50px; /* Define a altura do elemento como 50 pixels */
+    margin-right: 20px; /* Define uma margem à direita do elemento como 20 pixels */
+    border-radius: 30px; /* Define o raio dos cantos do elemento como 30 pixels, criando cantos arredondados */ 
+}
+
+/* Define a classe .anne */
+.anne{
+    display: flex; /* Define o modelo de layout do elemento como flexível */
+    flex-wrap: wrap; /* Permite que os itens dentro do elemento sejam organizados em várias linhas se necessário */
+    padding: 40px; /* Define o preenchimento interno do elemento como 40 pixels */
+    width: 300px; /* Define a largura do elemento como 300 pixels */
+    height: 200px; /* Define a altura do elemento como 200 pixels */
+    color: white; /* Define a cor do texto dentro do elemento como branco */
+    background-color: hsl(300, 43%, 22%); /* Define a cor de fundo do elemento usando HSL */
+    margin: 4% 0px 20px 0; /* Define as margens do elemento (superior, direita, inferior, esquerda) */
+    border-radius: 10px; /* Define o raio de curvatura dos cantos do elemento */
+}
+
+/* Define a img de anne */
+.anne img{
+    width: 50px; /* Define a largura da imagem como 50 pixels */
+    height: 50px; /* Define a altura da imagem como 50 pixels */
+    margin-right: 20px; /* Define uma margem à direita da imagem como 20 pixels */
+    border-radius: 30px; /* Define o raio dos cantos da imagem como 30 pixels, criando cantos arredondados */
+}
+
+/* Define o elemento footer */
+footer{
+    width: 100%; /* Define a largura do elemento como 100% da largura do contêiner pai */
+    align-items: center; /* Alinha os itens do elemento verticalmente no centro */
+    text-align: center; /* Alinha o texto dentro do elemento ao centro */
+    display: flex; /* Define o modelo de layout do elemento como flexível */
+    justify-content: center; /* Alinha os itens do elemento horizontalmente no centro */
+    flex-wrap: wrap; /* Permite que os itens dentro do elemento sejam organizados em várias linhas se necessário */
+}
+
+footer .atribuicaocod{
+    margin-top: 10px;
+    padding: 20px;
+    height: 20px;
+    font-size: 14px;
+}
