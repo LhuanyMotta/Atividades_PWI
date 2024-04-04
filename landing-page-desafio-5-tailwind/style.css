@@ -1,0 +1,434 @@
+/* Definições de variáveis
+:root{
+  /* Cores Primárias
+  --pink: hsl(322, 100%, 66%);
+
+  /* Cores Neutras
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --white: hsl(0, 0%, 100%);
+  --shadow: rgb(214, 214, 214);
+}
+
+/* Reset de estilos
+*{
+  padding: 0; /* Remove o preenchimento padrão
+  margin: 0; /* Remove a margem padrão
+  box-sizing: border-box; /* Define a caixa de modelo como border-box
+}
+
+/* Estilos gerais do corpo
+body{
+  max-width: 100vw; /* Define a largura máxima do corpo como 100% da largura da viewport
+  Font-size: 18px; /* Define o tamanho da fonte do corpo
+  font-family: "Open Sans", sans-serif; /* Define a fonte do corpo
+}
+
+/* Estilos de cabeçalho
+h1, h2, h3, h4, h5, h6{
+  font-family: "Poppins", sans-serif; /* Define a fonte dos títulos
+  font-weight: 600; /* Define o peso da fonte dos títulos
+  font-style: normal; /* Define o estilo da fonte dos títulos como normal
+  text-transform: capitalize; /* Transforma o texto dos títulos em maiúsculas
+}
+
+/* Estilos de imagens
+img{
+  max-width: 100%; /* Define a largura máxima das imagens como 100%
+  max-height: 100%; /* Define a altura máxima das imagens como 100%
+}
+
+/* Remoção de marcadores de lista
+li{
+  list-style: none; /* Remove os marcadores de lista
+}
+
+/* Estilos de links
+a{
+  text-decoration: none; /* Remove a decoração dos links
+  color: var(--white); /* Define a cor dos links
+  display: inline-block; /* Define os links como elementos em bloco
+  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre os links
+}
+
+/* Estilos da seção inicial
+.home{
+  background-color: var(--very-pale-cyan); /* Define a cor de fundo da seção inicial
+  background-image: url(./images/bg-hero-desktop.svg); /* Define a imagem de fundo da seção inicial
+  padding: 80px; /* Adiciona preenchimento interno à seção inicial
+}
+
+/* Estilos do cabeçalho
+header{
+  display: flex; /* Define o cabeçalho como um flex container
+  justify-content: space-between; /* Distribui o espaço entre os itens do cabeçalho
+  align-items: center; /* Alinha os itens verticalmente no centro do cabeçalho
+  margin-bottom: 60px; /* Adiciona margem inferior ao cabeçalho
+}
+
+/* Estilos de links no cabeçalho
+header a{
+  color: var(--very-dark-cyan); /* Define a cor dos links do cabeçalho
+  padding: 15px 70px; /* Adiciona preenchimento interno aos links do cabeçalho
+  background-color: var(--white); /* Define a cor de fundo dos links do cabeçalho
+  box-shadow: 0 0 10px 0 var(--shadow); /* Adiciona uma sombra aos links do cabeçalho
+  border-radius: 25px; /* Adiciona bordas arredondadas aos links do cabeçalho
+  font-weight: 700; /* Define o peso da fonte dos links do cabeçalho
+  text-transform: capitalize; /* Transforma o texto dos links em maiúsculas
+}
+
+/* Estilos do conteúdo da seção inicial
+.home-content{
+  display: flex; /* Define a exibição dos elementos filhos como um flex container
+  align-items: center; /* Alinha os itens verticalmente no centro
+}
+
+/* Estilos da descrição na seção inicial
+.home-content .home-desc{
+  width: 50%; /* Define a largura da descrição como 50% do contêiner pai
+  padding-right: 116px; /* Adiciona preenchimento à direita da descrição
+}
+
+/* Estilos do título na descrição
+.home-content .home-desc h2{
+  color: var(--very-dark-cyan); /* Define a cor do título
+  font-size: 47px; /* Define o tamanho da fonte do título
+}
+
+/* Estilos do parágrafo na descrição
+.home-content .home-desc p{
+  color: var(--very-dark-cyan); /* Define a cor do parágrafo
+  margin: 20px 0; /* Define as margens superior e inferior do parágrafo
+}
+
+/* Estilos dos links na descrição
+.home-content .home-desc a{
+  color: var(--white); /* Define a cor do link
+  padding: 15px 70px; /* Adiciona preenchimento ao link
+  background-color: var(--pink); /* Define a cor de fundo do link
+  border-radius: 25px; /* Adiciona bordas arredondadas ao link
+  font-weight: 700; /* Define o peso da fonte do link
+  text-transform: capitalize; /* Transforma o texto do link em maiúsculas
+}
+
+/* Estilos da imagem na seção inicial
+.home-content .home-image{
+  width: 50%; /* Define a largura da imagem como 50% do contêiner pai
+}
+
+/* Estilos da seção de informações
+.inf{
+  padding: 100px 80px; /* Adiciona preenchimento interno à seção de informações
+  background-color: var(--white); /* Define a cor de fundo da seção de informações
+  display: flex; /* Define a exibição dos elementos filhos como um flex container
+  flex-direction: column; /* Define a direção do fluxo dos itens como coluna
+  align-items: center; /* Alinha os itens verticalmente no centro
+  gap: 30px; /* Define o espaçamento entre os elementos filhos
+}
+
+/* Estilos das seções
+.inf section{
+  border-radius: 10px; /* Adiciona bordas arredondadas às seções
+  background-color: var(--white); /* Define a cor de fundo das seções
+}
+
+/* Estilos das seções, exceto aquelas marcadas como prontas
+.inf section:not(.ready){
+  padding: 50px 30px 40px 150px; /* Adiciona preenchimento interno à seção, exceto seções prontas
+  display: flex; /* Define a exibição dos elementos filhos como um flex container
+  align-items: center; /* Alinha os itens verticalmente no centro
+  gap: 80px; /* Define o espaçamento entre os elementos filhos
+  box-shadow: 0 0 10px 0 var(--shadow); /* Adiciona uma sombra à seção
+}
+
+/* Estilos das seções prontas
+.inf .ready{
+  margin-top: 80px; /* Adiciona margem superior à seção pronta
+  width: 65%; /* Define a largura da seção pronta
+  padding: 75px; /* Adiciona preenchimento interno à seção pronta
+  text-align: center; /* Centraliza o texto na seção pronta
+  margin-bottom: -180px; /* Adiciona margem inferior negativa à seção pronta
+  box-shadow: 0 -1px 5px 0 var(--shadow); /* Adiciona uma sombra à seção pronta
+}
+
+/* Estilos do título nas seções prontas
+.inf .ready h2{
+  font-size: 30px; /* Define o tamanho da fonte do título na seção pronta
+  margin-bottom: 25px; /* Adiciona margem inferior ao título na seção pronta
+}
+
+/* Estilos dos links nas seções prontas
+.inf .ready a{
+  color: var(--white); /* Define a cor dos links na seção pronta
+  padding: 15px 70px; /* Adiciona preenchimento aos links na seção pronta
+  background-color: var(--pink); /* Define a cor de fundo dos links na seção pronta
+  border-radius: 25px; /* Adiciona bordas arredondadas aos links na seção pronta
+  font-weight: 700; /* Define o peso da fonte dos links na seção pronta
+  box-shadow: 0 5px 15px 0 var(--shadow); /* Adiciona uma sombra aos links na seção pronta
+  text-transform: capitalize; /* Transforma o texto dos links em maiúsculas
+}
+
+/* Estilos do texto na seção de informações
+.inf .text{
+  flex-grow: 1; /* Permite que o texto na seção de informações cresça para ocupar o espaço disponível
+}
+
+/* Estilos do título no texto
+.inf .text h3{
+  margin-bottom: 10px; /* Adiciona margem inferior ao título no texto
+  font-size: 25px; /* Define o tamanho da fonte do título no texto
+}
+
+/* Estilos do parágrafo no texto
+.inf .text p{
+  color: var(--grayish-blue) /* Define a cor do parágrafo no texto
+}
+
+/* Estilos da figura na seção de informações
+.inf figure{
+  flex-grow: 1; /* Permite que a figura na seção de informações cresça para ocupar o espaço disponível
+}
+
+/* Estilos do rodapé
+footer{
+  background-color: var(--very-dark-cyan); /* Define a cor de fundo do rodapé
+  padding: 120px 80px 80px; /* Adiciona preenchimento interno ao rodapé
+  color: var(--white); /* Define a cor do texto no rodapé
+  position: relative; /* Define a posição do rodapé como relativa
+  z-index: -1; /* Define a ordem de empilhamento do rodapé
+}
+
+/* Estilos das informações do rodapé
+footer .footer-inf{
+  margin-top: 20px; /* Adiciona margem superior às informações do rodapé
+  display: flex; /* Define a exibição dos elementos filhos como um flex container
+}
+
+/* Estilos das divisões no rodapé
+footer .footer-inf div{
+  width: 25%; /* Define a largura das divisões no rodapé
+}
+
+/* Estilos das divisões no rodapé, exceto a primeira
+footer .footer-inf div:not(:first-child){
+  padding-left: 50px; /* Adiciona preenchimento à esquerda das divisões no rodapé, exceto a primeira
+}
+
+/* Estilos dos itens de lista no rodapé
+footer .footer-inf div li{
+  margin: 20px 0; /* Define as margens dos itens de lista no rodapé
+}
+
+/* Estilos dos itens de lista na primeira divisão do rodapé
+footer .footer-inf div:first-child li{
+  margin-left: 20px; /* Adiciona margem à esquerda aos itens de lista na primeira divisão do rodapé
+  padding-left: 10px; /* Adiciona preenchimento à esquerda aos itens de lista na primeira divisão do rodapé
+}
+
+/* Altera o estilo da fonte para normal nos elementos <address>
+footer .footer-inf div:first-child address{
+  font-style: normal; font-style: normal; /* Define o estilo da fonte dos elementos <address> como normal
+}
+
+/* Define as configurações para os marcadores de lista no rodapé
+footer .footer-inf div:first-child li:first-child {
+  list-style-image: url('./images/icon-location.svg'); /* Define uma imagem como marcador para o primeiro item de lista na primeira divisão do rodapé
+}
+footer .footer-inf div:first-child li:nth-child(2) {
+  list-style-image: url('./images/icon-phone.svg'); /* Define uma imagem como marcador para o segundo item de lista na primeira divisão do rodapé
+}
+footer .footer-inf div:first-child li:last-child {
+  list-style-image: url('./images/icon-email.svg'); /* Define uma imagem como marcador para o último item de lista na primeira divisão do rodapé
+}
+
+/* Define as configurações para a última divisão do rodapé
+footer .footer-inf div:last-child {
+  display: flex; /* Define a exibição dos elementos filhos da última divisão no rodapé como um flex container
+}
+
+footer .footer-inf div:last-child li {
+  width: 32px; /* Define a largura dos itens de lista na última divisão no rodapé
+  height: 32px; /* Define a altura dos itens de lista na última divisão no rodapé
+  margin-right: 8px; /* Adiciona margem à direita aos itens de lista na última divisão no rodapé
+}
+footer .footer-inf div:last-child a {
+  width: 100%; /* Define a largura dos links na última divisão no rodapé
+  height: 100%; /* Define a altura dos links na última divisão no rodapé
+  display: flex; /* Define a exibição dos elementos filhos dos links na última divisão no rodapé como um flex container
+  justify-content: center; /* Alinha os elementos horizontalmente no centro dos links na última divisão no rodapé
+  align-items: center; /* Alinha os elementos verticalmente no centro dos links na última divisão no rodapé
+  border: 1px solid var(--white); /* Adiciona uma borda aos links na última divisão no rodapé
+  border-radius: 50%; /* Adiciona bordas arredondadas aos links na última divisão no rodapé
+}
+
+/* Define as configurações para o elemento de direitos autorais
+.copyright {
+  position: absolute; /* Define a posição do elemento de direitos autorais como absoluta
+  font-size: 13px; /* Define o tamanho da fonte do elemento de direitos autorais
+  bottom: 10%; /* Define a distância do fundo para o elemento de direitos autorais
+  right: 10%; /* Define a distância da direita para o elemento de direitos autorais
+}
+/* Define as regras de estilo para telas com largura máxima de 900px
+@media screen and (max-width: 900px) {
+  .home-content{
+    flex-direction: column; /* Altera a direção do fluxo dos itens para coluna
+    text-align: center; /* Centraliza o texto
+  }
+  .home-content .home-desc{
+    width: 100%; /* Define a largura da descrição como 100%
+    padding-right: 0; /* Remove o preenchimento à direita da descrição
+    margin-bottom: 30px; /* Adiciona margem inferior à descrição
+  }
+  .home-content .home-image{
+    width: 100%; /* Define a largura da imagem como 100%
+  }
+}
+
+/* Define as regras de estilo para telas com largura máxima de 780px
+@media screen and (max-width: 780px) {
+  .home{
+    padding: 60px; /* Altera o preenchimento da seção inicial
+  }
+  header h1{
+    width: 30%; /* Define a largura do título no cabeçalho
+  }
+  header a{
+    padding: 5px 35px; /* Altera o preenchimento dos links no cabeçalho
+  }
+  .inf{
+    padding: 80px 60px; /* Altera o preenchimento da seção de informações
+  }
+  .inf section:not(.ready){
+    padding: 50px; /* Altera o preenchimento das seções, exceto as prontas
+  }
+  .inf .ready {
+    margin-top: 60px; /* Adiciona margem superior à seção pronta
+    width: 80%; /* Define a largura da seção pronta
+    padding: 60px; /* Altera o preenchimento da seção pronta
+  }
+
+  footer{
+    padding: 125px 60px 80px; /* Altera o preenchimento do rodapé
+  }
+  footer .footer-inf {
+    flex-direction: column; /* Altera a direção do fluxo dos itens para coluna
+  }
+  footer .footer-inf div{
+    width: 100%; /* Define a largura das divisões no rodapé como 100%
+  }
+  footer .footer-inf div:not(:first-child){
+    padding-left: 0; /* Remove o preenchimento à esquerda das divisões no rodapé, exceto a primeira
+  }
+  footer .footer-inf div:first-child li {
+    margin-left: 27px; /* Adiciona margem à esquerda aos itens de lista na primeira divisão do rodapé
+  }
+}
+/* Define as regras de estilo para telas com largura máxima de 600px
+@media screen and (max-width: 600px) {
+  .home{
+    padding: 30px; /* Altera o preenchimento da seção inicial
+  }
+  header h1{
+    width: 30%; /* Define a largura do título no cabeçalho
+  }
+  header a{
+    padding: 3px 15px; /* Altera o preenchimento dos links no cabeçalho
+  }
+
+  .inf{
+    padding: 40px 30px; /* Altera o preenchimento da seção de informações
+  }
+  .inf section:not(.ready){
+    padding: 25px; /* Altera o preenchimento das seções, exceto as prontas
+  }
+  .inf .ready {
+    margin-top: 30px; /* Adiciona margem superior à seção pronta
+    width: 100%; /* Define a largura da seção pronta como 100%
+    padding: 30px; /* Altera o preenchimento da seção pronta
+    margin-bottom: -125px; /* Adiciona margem inferior negativa à seção pronta
+  }
+  .inf section:not(.ready) {
+    flex-direction: column; /* Altera a direção do fluxo dos itens para coluna
+    gap: 40px; /* Altera o espaçamento entre os elementos filhos
+  }
+  footer{
+    padding: 120px 30px 60px; /* Altera o preenchimento do rodapé
+  }
+  footer .footer-inf {
+    flex-direction: column; /* Altera a direção do fluxo dos itens para coluna
+  }
+  footer .footer-inf div{
+    width: 100%; /* Define a largura das divisões no rodapé como 100%
+  }
+  footer .footer-inf div:not(:first-child){
+    padding-left: 0; /* Remove o preenchimento à esquerda das divisões no rodapé, exceto a primeira
+  }
+  footer .footer-inf div:first-child li {
+    margin-left: 27px; /* Adiciona margem à esquerda aos itens de lista na primeira divisão do rodapé
+  }
+  .footer-inf div:last-child {
+    justify-content: center; /* Alinha os elementos horizontalmente no centro na última divisão do rodapé
+  }
+  .copyright {
+    text-align: center; /* Centraliza o texto
+    translate: -50% -50%; /* Move o elemento para a esquerda e para cima
+    bottom: 0; /* Define a posição do elemento na parte inferior
+    left: 50%; /* Define a posição do elemento à esquerda
+    font-size: 11px; /* Define o tamanho da fonte do elemento
+  }
+}
+/* Define as regras de estilo para telas com largura máxima de 450px
+@media screen and (max-width: 450px){
+  body{
+    Font-size: 14px; /* Define o tamanho da fonte do corpo
+  }
+  .home{
+    padding: 15px; /* Altera o preenchimento da seção inicial
+  }
+  header{
+    margin-bottom: 30px; /* Adiciona margem inferior ao cabeçalho
+  }
+  .home-content .home-desc h2 {
+    font-size: 32px; /* Altera o tamanho da fonte do título na descrição
+  }
+  .home-content .home-desc p {
+    margin: 10px 0 20px; /* Altera as margens do parágrafo na descrição
+  }
+  .inf{
+    padding: 20px 15px; /* Altera o preenchimento da seção de informações
+  }
+  .inf section:not(.ready){
+    text-align: center; /* Centraliza o texto nas seções, exceto as prontas
+    padding: 40px; /* Altera o preenchimento das seções, exceto as prontas
+  }
+  .inf section:nth-child(1), .inf section:nth-child(3){
+    flex-direction: column-reverse; /* Altera a direção do fluxo dos itens para coluna inversa
+  }
+}
+/* Define as regras de estilo para telas com largura máxima de 375px
+@media screen and (max-width: 375px){
+  .home-content .home-desc h2 {
+    font-size: 26px; /* Altera o tamanho da fonte do título na descrição
+  }
+  .inf .ready {
+    padding: 15px; /* Altera o preenchimento da seção pronta
+  }
+  .inf .ready h2 {
+    font-size: 20px; /* Altera o tamanho da fonte do título na seção pronta
+    margin-bottom: 10px; /* Adiciona margem inferior ao título na seção pronta
+  }
+  .inf .ready a {
+    width: 80%; /* Define a largura dos links na seção pronta
+    padding: 10px 0; /* Altera o preenchimento dos links na seção pronta
+  }
+  footer h2{
+    width: 50%; /* Define a largura do título no rodapé
+  }
+  footer .footer-inf{
+    margin-top: 0; /* Remove a margem superior do rodapé
+  }
+  footer .footer-inf div:nth-child(2) li:last-child{
+    margin-bottom: 0; /* Remove a margem inferior do último item de lista na segunda divisão do rodapé
+  }
+}*/
